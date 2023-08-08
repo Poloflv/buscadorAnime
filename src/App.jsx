@@ -41,7 +41,10 @@ function App() {
   return (
     <>
       <main className='bg-[url(/fon3.jpg)]  bg-cover min-h-screen text-white p-4 justify-center items-center'>
-        <h1 className='text-4xl font-bold text-center mb-4 text-red-500'>Buscador de Anime</h1>
+        <div className='flex justify-center hover:animate-pulse'>
+        <h1 className='text-4xl font-bold text-center mb-4 text-sky-600 underline decoration-sky-600 cursor-text  hover:animate-pulse flex justify-center pt-5 '>Buscador de Anime</h1>
+        <img src="/smile2.png" alt="" />
+        </div>
         <form onSubmit={handleSubmit} autoComplete='off' className='flex rounded-md overflow-hidden max-w-max mx-auto '>
           <input id='animeName' type="text" placeholder='Buscar anime...' className='text-black p-2 focus:bg-gray-600 focus:border-0 focus:text-white'/>
           <button className='bg-red-500 px-4 active:scale-110'>Buscar</button>
@@ -54,7 +57,7 @@ function App() {
     animes ? 
     
     animes.map((anime) => (<> 
-       <article key={anime?.mal_id}  className='bg-gray-500/90 flex-col max-w-xs mx-auto p-6 rounded-md my-3 hover:scale-105 hover:bg-gray-600 hover:rotate-[-0.5deg]'>
+       <article key={anime?.mal_id}  className='bg-sky-600/50 flex-col max-w-xs mx-auto p-6 rounded-md my-3 hover:scale-[1.01] hover:bg-sky-600 hover:rotate-[-0.5deg]'>
       <div className='h-[320px] overflow-hidden'>
           <img src={anime?.images.jpg.large_image_url} alt="" className='rounded-md h-full block object-cover w-full'/>
       </div>
@@ -104,7 +107,7 @@ function App() {
     :
     
     infoStart.map((anime) => (<> 
-       <article key={anime?.mal_id}  className='bg-gray-500/90 flex-col max-w-xs mx-auto p-6 rounded-md my-3 hover:scale-105 hover:bg-gray-600 hover:rotate-[-0.5deg]'>
+       <article key={anime?.mal_id}  className='bg-sky-600/50 flex-col max-w-xs mx-auto p-6 rounded-md my-3 hover:scale-[1.01] hover:bg-sky-600 hover:rotate-[-0.5deg]'>
       <div className='h-[320px] overflow-hidden'>
           <img src={anime?.images.jpg.large_image_url} alt="" className='rounded-md h-full block object-cover w-full'/>
       </div>
