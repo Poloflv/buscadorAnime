@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <main className='bg-[url(/fon3.jpg)]  bg-cover min-h-screen text-white p-4'>
+      <main className='bg-[url(/fon3.jpg)]  bg-cover min-h-screen text-white p-4 justify-center items-center'>
         <h1 className='text-4xl font-bold text-center mb-4 text-red-500'>Buscador de Anime</h1>
         <form onSubmit={handleSubmit} autoComplete='off' className='flex rounded-md overflow-hidden max-w-max mx-auto '>
           <input id='animeName' type="text" placeholder='Buscar anime...' className='text-black p-2 focus:bg-gray-600 focus:border-0 focus:text-white'/>
